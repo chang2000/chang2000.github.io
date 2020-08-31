@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>2020初 Arch Linux安装指北 - Alex WANG</title><meta name="Description" content="This is WANG Tianchang Alex"><meta property="og:title" content="2020初 Arch Linux安装指北" />
+<meta property="og:description" content="Arch Linux是一个Linux发行版。Linux拥有很多发行版，像很多人熟知的Ubuntu，
+Elementary OS，和很多黑客使用的Kali Linux，都是Linux发行版(Distribution). 你可能会疑惑，发行版和Linux之间的关系。 简单来说，Linux系统本身，是一个设计精巧但是不能做很多事情的东西。当年Linus先生孤身一人，为了抵抗Unix的霸权，写出了Linux Kernel，构建起了软件和硬件的连接。Linux本身是一个内核，仅仅包含了有限量的软件。
+比如，~sudo su~　这个命令我们已经习以为常，认为这就是Linux系统本身的feature，但其实，~sudo~ 这个命令是作为一个软件存在的。在盘古开天地之时，或者说在Linux系统诞生之初，root用户是理所当然。这里也涉及到了Linux中“一切皆文件”的思想。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chang2000.github.io/arch-installation/" />
+<meta property="og:image" content="https://chang2000.github.io/logo.png"/>
+<meta property="article:published_time" content="2020-01-01T10:28:22+08:00" />
+<meta property="article:modified_time" content="2020-01-01T10:28:22+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://chang2000.github.io/logo.png"/>
+
+<meta name="twitter:title" content="2020初 Arch Linux安装指北"/>
+<meta name="twitter:description" content="Arch Linux是一个Linux发行版。Linux拥有很多发行版，像很多人熟知的Ubuntu，
+Elementary OS，和很多黑客使用的Kali Linux，都是Linux发行版(Distribution). 你可能会疑惑，发行版和Linux之间的关系。 简单来说，Linux系统本身，是一个设计精巧但是不能做很多事情的东西。当年Linus先生孤身一人，为了抵抗Unix的霸权，写出了Linux Kernel，构建起了软件和硬件的连接。Linux本身是一个内核，仅仅包含了有限量的软件。
+比如，~sudo su~　这个命令我们已经习以为常，认为这就是Linux系统本身的feature，但其实，~sudo~ 这个命令是作为一个软件存在的。在盘古开天地之时，或者说在Linux系统诞生之初，root用户是理所当然。这里也涉及到了Linux中“一切皆文件”的思想。"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chang2000.github.io/arch-installation/" /><link rel="prev" href="https://chang2000.github.io/giveupoxhugo/" /><link rel="next" href="https://chang2000.github.io/rss1/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "2020初 Arch Linux安装指北",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chang2000.github.io\/arch-installation\/"
+        },"genre": "posts","wordcount":  1586 ,
+        "url": "https:\/\/chang2000.github.io\/arch-installation\/","datePublished": "2020-01-01T10:28:22+08:00","dateModified": "2020-01-01T10:28:22+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "WANG Tianchang Alex"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Alex WANG">WANG Tianchang Alex</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Alex WANG">WANG Tianchang Alex</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">2020初 Arch Linux安装指北</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://chang2000.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>WANG Tianchang Alex</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-01-01">2020-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1586 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#准备">准备</a></li>
+    <li><a href="#prepare-the-installation-driver">Prepare the installation driver</a></li>
+    <li><a href="#plug-the-source-disk-to-the-destination-device-and-lead-to-bios-setting">Plug the source disk to the destination device and lead to BIOS setting</a>
+      <ul>
+        <li><a href="#choose-to-use-the-hdd-as-the-highest-proority">Choose to use the HDD as the highest proority</a></li>
+      </ul>
+    </li>
+    <li><a href="#follow-the-installation-guide-dot">Follow the installation guide.</a></li>
+    <li><a href="#check-network-dot-use-ping">Check network. use <code>ping</code></a></li>
+    <li><a href="#connect-to-internet-use-wifi-menu">Connect to internet use wifi-menu</a></li>
+    <li><a href="#mirror-choose-the-china-area-mirror">Mirror: Choose the China area mirror</a></li>
+    <li><a href="#disk-partition">Disk Partition</a></li>
+    <li><a href="#format-the-disk">Format the disk</a></li>
+    <li><a href="#mount-the-disk">Mount the disk</a></li>
+    <li><a href="#chroot">Chroot</a></li>
+    <li><a href="#set-the-loader">Set the loader</a></li>
+    <li><a href="#post-installation">Post Installation</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Arch Linux是一个Linux发行版。Linux拥有很多发行版，像很多人熟知的Ubuntu，
+Elementary OS，和很多黑客使用的Kali Linux，都是Linux发行版(Distribution). 你可能会疑惑，发行版和Linux之间的关系。 简单来说，Linux系统本身，是一个设计精巧但是不能做很多事情的东西。当年Linus先生孤身一人，为了抵抗Unix的霸权，写出了Linux Kernel，构建起了软件和硬件的连接。Linux本身是一个内核，仅仅包含了有限量的软件。
+比如，~sudo su~　这个命令我们已经习以为常，认为这就是Linux系统本身的feature，但其实，~sudo~ 这个命令是作为一个软件存在的。在盘古开天地之时，或者说在Linux系统诞生之初，root用户是理所当然。这里也涉及到了Linux中“一切皆文件”的思想。</p>
+<p>Arch Linux，正如他的名字所表达出来的一样，这是一个需要用户自己去搭建的系统。换句话说，这是一个自由度很高的，可以任意由用户tweak的系统。这里可能有gangjing出来叨叨，说你想要自由你自己把linux从头编译起来，自己写桌面环境，窗口管理。我说你怎么不自己到沙滩上搬沙子回家自己提纯硅造志强呢。Arch的优越性在于他在操作性和原理性两方面达到了一个能够让人接受的平衡。操作性在于用户尝试tweak系统时的简便性，源理性在于向用户展现Linux操作系统的原貌。</p>
+<p>论操作性，以Geetoo为代表的发行版，安装及其繁琐，需要自己一步一步编译二进制文件。论原理性，以Ubuntu为代表的商业发行版，会自带很多累赘的软件，比如Ubuntu里的麻将连连看，虽然很好玩（大雾，但他毕竟不是我们想要的。</p>
+<p>关于为什么选择Arch作为自己的操作系统，有很多人已经有过论述了，大家大可直接google。但更额外的是，我推荐每个第一次使用Linux的人，或者需要跟Linux打交道的人，都需要仔细研究Arch Linux。</p>
+<p>Arch有着及其强大的社区，Arch使用者的群像也是一群热爱折腾的人，相关信息自行google。</p>
+<p>但Arch的安装是很复杂的，其中一个特点就是，即使arch被安装好了，他也只有一个命令行界面，所有的图形相关，都是需要用户自行决定安装的。这也印证的Arch的特点，让用户明白桌面环境（DE）并不是某一个系统的原生。</p>
+<p><strong>安装踩坑</strong>
+下面是我在上一次安装过程中的一些快速记录，每一点都是很重要的，同时附上相关文章链接。</p>
+<h2 id="准备">准备</h2>
+<ul>
+<li>系统安装盘（下文有介绍，USB Driver和HDD均可）</li>
+<li>合法上网工具（QV2ray and SwitchyOmega: a chrome extension）(别问我这个为什么重
+要)</li>
+</ul>
+<h2 id="prepare-the-installation-driver">Prepare the installation driver</h2>
+<p><a href="https://wiki.archlinux.org/index.php/USB%5Fflash%5Finstallation%5Fmedia%5F(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)">https://wiki.archlinux.org/index.php/USB%5Fflash%5Finstallation%5Fmedia%5F(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)</a>#macOS
+Use &lsquo;dd&rsquo; command on macos</p>
+<ol>
+<li>Use <code>diskutil list</code> to check the  driver</li>
+<li>Unmount the device</li>
+<li>sudo dd if=/Users/tianchangwang/Downloads/Installation\<br>
+Source/archlinux-2019.12.01-x86_64.iso of=/dev/rdisk2 bs=1m</li>
+<li>Enject the device</li>
+</ol>
+<h2 id="plug-the-source-disk-to-the-destination-device-and-lead-to-bios-setting">Plug the source disk to the destination device and lead to BIOS setting</h2>
+<h3 id="choose-to-use-the-hdd-as-the-highest-proority">Choose to use the HDD as the highest proority</h3>
+<p>Use UEFI lead will make you see a simple GUI, you should do it. If you see a
+good looking GUI you should check your BIOS, for the info of BIOS, you&rsquo;d google
+it by yourself.</p>
+<h2 id="follow-the-installation-guide-dot">Follow the installation guide.</h2>
+<p>一定要细细阅读<a href="https://wiki.archlinux.org/index.php/Installation%5Fguide" target="_blank" rel="noopener noreffer">官方安装手
+册</a></p>
+<p>推荐阅读文章：<a href="https://www.viseator.com/2017/05/17/arch%5Finstall/">https://www.viseator.com/2017/05/17/arch%5Finstall/</a>　
+推荐视频：<a href="https://www.youtube.com/watch?v=-zb8220uUiA">https://www.youtube.com/watch?v=-zb8220uUiA</a>
+上面这个视频几乎可以完全follow，但是要注意在reboot前额外安装dialog和更改镜像。</p>
+<h2 id="check-network-dot-use-ping">Check network. use <code>ping</code></h2>
+<h2 id="connect-to-internet-use-wifi-menu">Connect to internet use wifi-menu</h2>
+<p>在命令行里连接wifi，使用 <code>wifi-menu</code> 即可，注意这个包依赖于 ~dialog~，请务必保证
+安装好。</p>
+<h2 id="mirror-choose-the-china-area-mirror">Mirror: Choose the China area mirror</h2>
+<p>选择中国镜像，推荐清华（tuna）和中科大（ustc），能让你的包安装达到满速。</p>
+<h2 id="disk-partition">Disk Partition</h2>
+<h2 id="format-the-disk">Format the disk</h2>
+<h2 id="mount-the-disk">Mount the disk</h2>
+<p>You need to create /mnt/boot and mount the sda1 to it.
+Rememeber to install vim and dialog</p>
+<h2 id="chroot">Chroot</h2>
+<p>需要在这个时候额外安装这些软件
+pacman -S vim dialog wpa_supplicant ntfs-3g networkmanager</p>
+<h2 id="set-the-loader">Set the loader</h2>
+<p>这是很重要的一步，一旦你没有设置好boot顺序，可能直接导致系统安装失败，前功尽弃。</p>
+<h2 id="post-installation">Post Installation</h2>
+<p>安装完之后，相信相关的图形界面对你来说也是小菜一碟了。xorg＋kde是目前较为流行的
+组合。</p>
+<p>HAPPY HACKING！</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2020-01-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/arch-installation/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北" data-via="SuperPowerAlex"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://chang2000.github.io/arch-installation/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://chang2000.github.io/arch-installation/" data-title="2020初 Arch Linux安装指北"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/giveupoxhugo/" class="prev" rel="prev" title="放弃使用Emacs ox-hugo管理博客文件"><i class="fas fa-angle-left fa-fw"></i>放弃使用Emacs ox-hugo管理博客文件</a>
+            <a href="/rss1/" class="next" rel="next" title="摒弃无目的信息获取，建立个人知识订阅体系">摒弃无目的信息获取，建立个人知识订阅体系<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://chang2000.github.io" target="_blank">WANG Tianchang Alex</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

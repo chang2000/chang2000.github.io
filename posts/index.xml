@@ -1,0 +1,65 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - Alex WANG</title>
+        <link>https://chang2000.github.io/posts/</link>
+        <description>All Posts | Alex WANG</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>wangtcalex@gmail.com (WANG Tianchang Alex)</managingEditor>
+            <webMaster>wangtcalex@gmail.com (WANG Tianchang Alex)</webMaster><lastBuildDate>Mon, 31 Aug 2020 10:28:22 &#43;0800</lastBuildDate><atom:link href="https://chang2000.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Aug, 2020 Readling Clips</title>
+    <link>https://chang2000.github.io/aug-2020-reading-clips/</link>
+    <pubDate>Mon, 31 Aug 2020 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/aug-2020-reading-clips/</guid>
+    <description><![CDATA[Aug, 2020 Reading Clips 这是一个水到渠成的Side Project，基于自己需要大量阅读文章并记录的需求，以月为单位记录下觉得值得一读的资料文章，作为记录和分]]></description>
+</item><item>
+    <title>摒弃无目的信息获取，建立个人知识订阅体系</title>
+    <link>https://chang2000.github.io/rss1/</link>
+    <pubDate>Tue, 14 Jan 2020 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/rss1/</guid>
+    <description><![CDATA[这其实也并不是一个突然兴起的想法，只是在最近独处学习以及自我思考的过程中，开始发觉如何有条理地去获取消息（是消息，不是知识）是非常紧迫的事情]]></description>
+</item><item>
+    <title>2020初 Arch Linux安装指北</title>
+    <link>https://chang2000.github.io/arch-installation/</link>
+    <pubDate>Wed, 01 Jan 2020 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/arch-installation/</guid>
+    <description><![CDATA[<p>Arch Linux是一个Linux发行版。Linux拥有很多发行版，像很多人熟知的Ubuntu，
+Elementary OS，和很多黑客使用的Kali Linux，都是Linux发行版(Distribution). 你可能会疑惑，发行版和Linux之间的关系。 简单来说，Linux系统本身，是一个设计精巧但是不能做很多事情的东西。当年Linus先生孤身一人，为了抵抗Unix的霸权，写出了Linux Kernel，构建起了软件和硬件的连接。Linux本身是一个内核，仅仅包含了有限量的软件。
+比如，~sudo su~　这个命令我们已经习以为常，认为这就是Linux系统本身的feature，但其实，~sudo~ 这个命令是作为一个软件存在的。在盘古开天地之时，或者说在Linux系统诞生之初，root用户是理所当然。这里也涉及到了Linux中“一切皆文件”的思想。</p>]]></description>
+</item><item>
+    <title>放弃使用Emacs ox-hugo管理博客文件</title>
+    <link>https://chang2000.github.io/giveupoxhugo/</link>
+    <pubDate>Tue, 24 Dec 2019 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/giveupoxhugo/</guid>
+    <description><![CDATA[从接触GNU Emacs以及自由软件文化以来，自己就一直致力于把自己的工作流整合到Emacs这一个单纯的软件里。可当我真正整合之后，事情好像也]]></description>
+</item><item>
+    <title>Shell Code Injection Demo</title>
+    <link>https://chang2000.github.io/shell-code-injection/</link>
+    <pubDate>Mon, 25 Nov 2019 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/shell-code-injection/</guid>
+    <description><![CDATA[Prerequisites: Refer to this [https://pdfhost.io/v/8DZuyTT8v_Vulnerable_Program_and_Attack.pdf]
+Scenario &amp; Setting Up Exploit a system to gain shell access.
+Our inj.c:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15  #include &lt;stdio.h&gt;#include &lt;string.h&gt; void func(char *name) { char buf[100]; strcpy(buf, name); printf(&#34;Welcome %s\n&#34;, buf); } int main(int argc, char *argv[]) { func(argv[1]); return 0; }   Note: we need to compile it with
+1  gcc inj.]]></description>
+</item><item>
+    <title>A Simple Exploit</title>
+    <link>https://chang2000.github.io/exploit/</link>
+    <pubDate>Thu, 12 Sep 2019 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/exploit/</guid>
+    <description><![CDATA[This blog is adpated with the teaching content in CSCI4130, CUHK.
+ A simple implemetation notes created by me. I believe it&rsquo;s helpful for the understanding of vulnerable programs. Notes HERE
+Thanks.]]></description>
+</item><item>
+    <title>WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器</title>
+    <link>https://chang2000.github.io/karabiner/</link>
+    <pubDate>Sat, 01 Dec 2018 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/karabiner/</guid>
+    <description><![CDATA[背景：文字工作者总是会追求最大的输入效率，会对自己的键盘非常敏感。为了达到**&ldquo;Type as fast as your mind&rdquo;**，在硬]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器 - Alex WANG</title><meta name="Description" content="This is WANG Tianchang Alex"><meta property="og:title" content="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器" />
+<meta property="og:description" content="背景：文字工作者总是会追求最大的输入效率，会对自己的键盘非常敏感。为了达到**&ldquo;Type as fast as your mind&rdquo;**，在硬" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://chang2000.github.io/karabiner/" />
+<meta property="og:image" content="https://chang2000.github.io/logo.png"/>
+<meta property="article:published_time" content="2018-12-01T10:28:22+08:00" />
+<meta property="article:modified_time" content="2018-12-01T10:28:22+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://chang2000.github.io/logo.png"/>
+
+<meta name="twitter:title" content="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器"/>
+<meta name="twitter:description" content="背景：文字工作者总是会追求最大的输入效率，会对自己的键盘非常敏感。为了达到**&ldquo;Type as fast as your mind&rdquo;**，在硬"/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://chang2000.github.io/karabiner/" /><link rel="next" href="https://chang2000.github.io/exploit/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "WHY Karabiner? - from a programmer's perspective Mac改键神器",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/chang2000.github.io\/karabiner\/"
+        },"genre": "posts","wordcount":  2121 ,
+        "url": "https:\/\/chang2000.github.io\/karabiner\/","datePublished": "2018-12-01T10:28:22+08:00","dateModified": "2018-12-01T10:28:22+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "WANG Tianchang Alex"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Alex WANG">WANG Tianchang Alex</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Alex WANG">WANG Tianchang Alex</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://chang2000.github.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>WANG Tianchang Alex</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2018-12-01">2018-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2121 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="true">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一-接着说为什么要改键">一. 接着说为什么要改键</a></li>
+        <li><a href="#二-大救星">二. 大救星</a></li>
+        <li><a href="#三-use-karabiner">三. Use Karabiner</a></li>
+        <li><a href="#四-文件备份">四. 文件备份</a></li>
+        <li><a href="#五-其他平台">五. 其他平台</a></li>
+      </ul>
+    </li>
+    <li><a href="#总结">总结：</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p><strong>背景</strong>：文字工作者总是会追求最大的输入效率，会对自己的键盘非常敏感。为了达到**&ldquo;Type as fast as your mind&rdquo;**，在硬件上必然要为自己做好全面的支持。除了换一把趁手的键盘，有时候更改键盘的键位也是十分必要的。*（回想起在win下使用ctrl lead快捷键的痛不欲生）* 这里介绍一个macOS下一个很实用的更改键位软件<a href="https://www.google.com/urlsa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiltuHbnJXfAhXMabwKHWMkA9EQFjAAegQIAhAC&amp;url=https%3A%2F%2Fpqrs.org%2Fosx%2Fkarabiner%2F&amp;usg=AOvVaw3Q6ftWJftSWzm_7nI7FGTJ" target="_blank" rel="noopener noreffer">Karabiner</a>，该项目已经在<a href="https://github.com/tekezo/Karabiner-Elements" target="_blank" rel="noopener noreffer">Github</a>上开源。</p>
+<hr>
+<!-- more -->
+<h3 id="一-接着说为什么要改键">一. 接着说为什么要改键</h3>
+<p>其实刚才对于改键的原因说的不够清楚，在自己的习惯键位下待了很长时间后也意识不到现有键位可能会存在什么问题。我也是在长时间使用macOS标准键盘很长时间后才接触改键的，现列举标准macOS键盘键位的最大痛点（很多点也适用于Windows键盘）。</p>
+<blockquote>
+<ol>
+<li><strong>MacBook Pro with TouchBar 无实体ESC键</strong></li>
+</ol>
+</blockquote>
+<p>这一点在新模具的MBP推出之后在程序员圈子里就被骂的一塌糊涂，其实笔者一开始并没有觉得esc变成触控式的有什么不多，毕竟在日常情况下用esc可能也就是摸鱼看剧的时候退出全屏（逃）。直到后来接触了Vim，并尝试使用Vim作为主力编辑器，才深知实体esc的重要性。</p>
+<blockquote>
+<ol>
+<li><strong>市面绝大多数键盘Control键位置诡异</strong></li>
+</ol>
+</blockquote>
+<p>无法使用实体esc，其实也可以曲线救国使用 **^(control) + [ ** 来代替esc。然而市面上所有的键盘control无一例外的都会出现在左下角，这是一个很尴尬的位置，是一个违反人体工程学到极致的例子。每次敲击control都需要把小拇指曲折成一个很奇怪的形状，并且会让左手偏离主键区，极大影响输入的连贯性。对于Emacs用户，control + shift 的组合键更是家常便饭，无法想象不改键该如何流畅使用Emacs。</p>
+<blockquote>
+<p>3.<strong>几乎所有键盘delete/backspace位置都在主键区最右上角</strong></p>
+</blockquote>
+<p>其实这一点并没有什么好喷的，毕竟几乎所有英语标准配列的键盘都是这个样子，但是请尝试一下在双手食指<strong>不离开FJ两个定位键</strong>（高效输入的重中之重）的条件下去按backspace，一般人的小指应该都没有那么长，这也直接导致我每次按backspace时都需要将自己的手腕水平顺时针旋转30度用无名指来敲击，再一次让手指离开主键区。</p>
+<p>所以到后来我的键盘成了这样子：<img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic3.zhimg.com/80/v2-a4f3db822e497b2b2aa440136887f08c_1440w.jpg"
+        data-srcset="https://pic3.zhimg.com/80/v2-a4f3db822e497b2b2aa440136887f08c_1440w.jpg, https://pic3.zhimg.com/80/v2-a4f3db822e497b2b2aa440136887f08c_1440w.jpg 1.5x, https://pic3.zhimg.com/80/v2-a4f3db822e497b2b2aa440136887f08c_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic3.zhimg.com/80/v2-a4f3db822e497b2b2aa440136887f08c_1440w.jpg"
+        title="karaSrc8" /></p>
+<h3 id="二-大救星">二. 大救星</h3>
+<p>键盘是个深坑，一开始大家都玩轴体，玩完轴体开始玩键帽，玩完键帽开始玩RGB，玩完RGB开始定制各种材质的外壳、定位板。然而有这么一款键盘被称作绝对的<a href="https://www.hhkeyboard.com" target="_blank" rel="noopener noreffer">退烧利器——HHKB</a>（并不适合大多数人）。一方面它以静电容轴独特的手感获得了众多追随者，另一方面它独特的配列和高昂的价格也让它具有了一种传奇的色彩，当然我们关注它的**<a href="https://www.pfu.fujitsu.com/hhkeyboard/leaflet/images/hhkb_pro_2_keylayout.pdf" target="_blank" rel="noopener noreffer">键盘配列(keyboard layout)</a>:**</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic1.zhimg.com/80/v2-77101c224264c496a4b53d9a2cc4fb2d_1440w.jpg"
+        data-srcset="https://pic1.zhimg.com/80/v2-77101c224264c496a4b53d9a2cc4fb2d_1440w.jpg, https://pic1.zhimg.com/80/v2-77101c224264c496a4b53d9a2cc4fb2d_1440w.jpg 1.5x, https://pic1.zhimg.com/80/v2-77101c224264c496a4b53d9a2cc4fb2d_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic1.zhimg.com/80/v2-77101c224264c496a4b53d9a2cc4fb2d_1440w.jpg"
+        title="karaSrc7" /></p>
+<p>忽略掉常见60%键盘都会做的function键二层映射，hhkb削掉了方向键（我并不喜欢）。最具特色的是将control移到了capslock位置，并且下移了delete。从功能键的位置可以看出，这把键盘的确是为了一部分程序员和文字工作者打造的（为什么说是一部分，毕竟也不是所有程序员都会一直呆在editor中，也有很多人是用ide的），而且键位极度偏向于Linux和macOS环境下的开发，因此把这套配列扒下来定是极好的。</p>
+<h3 id="三-use-karabiner">三. Use Karabiner</h3>
+<p>macOS下是自带修饰键工具的，只不过功能比较基础，主要是为了win键盘的适配交换一下option, command 和control： <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic1.zhimg.com/80/v2-2db861c330e975dd6b6410cab6ea0a69_1440w.jpg"
+        data-srcset="https://pic1.zhimg.com/80/v2-2db861c330e975dd6b6410cab6ea0a69_1440w.jpg, https://pic1.zhimg.com/80/v2-2db861c330e975dd6b6410cab6ea0a69_1440w.jpg 1.5x, https://pic1.zhimg.com/80/v2-2db861c330e975dd6b6410cab6ea0a69_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic1.zhimg.com/80/v2-2db861c330e975dd6b6410cab6ea0a69_1440w.jpg"
+        title="karaSrc2" />)</p>
+<p>可以看到，系统自带的修饰键还没有办法实现我们要的所有键的替换，这个时候，Karabiner出现了。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://picb.zhimg.com/80/v2-7e07cf091053fa9e55d7d428dad92b9d_1440w.jpg"
+        data-srcset="https://picb.zhimg.com/80/v2-7e07cf091053fa9e55d7d428dad92b9d_1440w.jpg, https://picb.zhimg.com/80/v2-7e07cf091053fa9e55d7d428dad92b9d_1440w.jpg 1.5x, https://picb.zhimg.com/80/v2-7e07cf091053fa9e55d7d428dad92b9d_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://picb.zhimg.com/80/v2-7e07cf091053fa9e55d7d428dad92b9d_1440w.jpg"
+        title="karaSrc1" /></p>
+<p>下载好Karabiner后launchpad会出现两个app图标，我们需要用到的是Karabiner-Element。</p>
+<p>进入软件后在Simple Modification中就能进行简单的修改，修改的方式很简单，左栏是当前键，右栏是目标键，没有先后之分，不需要考虑object reference conflict（smirk</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic4.zhimg.com/80/v2-67d61fc737a1307031cea95cb672900c_1440w.jpg"
+        data-srcset="https://pic4.zhimg.com/80/v2-67d61fc737a1307031cea95cb672900c_1440w.jpg, https://pic4.zhimg.com/80/v2-67d61fc737a1307031cea95cb672900c_1440w.jpg 1.5x, https://pic4.zhimg.com/80/v2-67d61fc737a1307031cea95cb672900c_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic4.zhimg.com/80/v2-67d61fc737a1307031cea95cb672900c_1440w.jpg"
+        title="karaSrc6" /></p>
+<p>可以针对每一把键盘进行单独修改，也可以通过建立新的profile对不同的键盘进行分类，例如我会把手上的键盘分成mac系自带键盘的和非mac系的外接键盘：     <img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic2.zhimg.com/80/v2-3ec0b64f2f2a6220de7b320681180b70_1440w.jpg"
+        data-srcset="https://pic2.zhimg.com/80/v2-3ec0b64f2f2a6220de7b320681180b70_1440w.jpg, https://pic2.zhimg.com/80/v2-3ec0b64f2f2a6220de7b320681180b70_1440w.jpg 1.5x, https://pic2.zhimg.com/80/v2-3ec0b64f2f2a6220de7b320681180b70_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic2.zhimg.com/80/v2-3ec0b64f2f2a6220de7b320681180b70_1440w.jpg"
+        title="karaSrc5" /></p>
+<p>当更换键盘后profile的更换也可以直接在menu bar完成：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic4.zhimg.com/80/v2-7193f80c44c9749bb9c12ecc4f1223ec_1440w.jpg"
+        data-srcset="https://pic4.zhimg.com/80/v2-7193f80c44c9749bb9c12ecc4f1223ec_1440w.jpg, https://pic4.zhimg.com/80/v2-7193f80c44c9749bb9c12ecc4f1223ec_1440w.jpg 1.5x, https://pic4.zhimg.com/80/v2-7193f80c44c9749bb9c12ecc4f1223ec_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic4.zhimg.com/80/v2-7193f80c44c9749bb9c12ecc4f1223ec_1440w.jpg"
+        title="karaSrc3" /></p>
+<p>还有一个很舒服的功能，即外接键盘时可以禁用内建键盘，主要是防止把外界键盘直接放在笔记本c面上用时压到内建键盘的键（话说在ins上带有hhkb标签的多半都是这样子用的），同样的，也可以对不同的键盘进行单独设置：</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://pic1.zhimg.com/80/v2-7261880d8fd4dd545ef53f4706061cd3_1440w.jpg"
+        data-srcset="https://pic1.zhimg.com/80/v2-7261880d8fd4dd545ef53f4706061cd3_1440w.jpg, https://pic1.zhimg.com/80/v2-7261880d8fd4dd545ef53f4706061cd3_1440w.jpg 1.5x, https://pic1.zhimg.com/80/v2-7261880d8fd4dd545ef53f4706061cd3_1440w.jpg 2x"
+        data-sizes="auto"
+        alt="https://pic1.zhimg.com/80/v2-7261880d8fd4dd545ef53f4706061cd3_1440w.jpg"
+        title="karaSrc6" /></p>
+<p>另外还有对F1-F12功能的重定义，以及超级组合键（shift按下200ms后识别成shift+control）的各种改键功能。</p>
+<h3 id="四-文件备份">四. 文件备份</h3>
+<p>其实网络上有很多关于Karabiner的介绍文章，但是几乎没有一个文章是提到了这个内容的。首先karabiner自带的只有将当前配置文件写入系统一个备份选项，对于多文件用户十分不友好，这意味着一旦karabiner出错或用户误删导致文件丢失，需要仔重新配置一遍，非常繁琐。这里介绍一下karabiner的源文件位置：</p>
+<p><strong>~/.config/karabiner/karabiner.json</strong></p>
+<p>直接复制文本内容存档就好，直接建立git repo也是不错的选择。</p>
+<h3 id="五-其他平台">五. 其他平台</h3>
+<p>For Windows: <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwiPitztvpXfAhXIEbwKHRk8CdsQFjAAegQIChAB&amp;url=https%3A%2F%2Fdownload.cnet.com%2FMapKeyboard%2F3000-2094_4-10623201.html&amp;usg=AOvVaw29A4cvr738hfOezHx2hhVE" target="_blank" rel="noopener noreffer">MapKeyboard</a></p>
+<p>For Linux: <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjxjpqQv5XfAhWMerwKHZBkCiAQFjAAegQIChAB&amp;url=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%2Fxmodmap&amp;usg=AOvVaw1E9yA0osKdy--UnNlkgiDU" target="_blank" rel="noopener noreffer">Xmodmap</a></p>
+<h2 id="总结">总结：</h2>
+<p>纯键盘输入，不用鼠标甚至减少使用trackpad来提高自己在纯文字处理中的效率，集中注意力。</p>
+<p>通过形成自己的一套键位配置来保证双手食指始终位于FJ定位键，实现全盲打。</p>
+<p><strong>MAKE THE BEST OF IT！</strong></p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2018-12-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/karabiner/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器" data-via="SuperPowerAlex"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://chang2000.github.io/karabiner/"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器"><i data-svg-src="/lib/simple-icons/icons/line.min.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="Share on Myspace" data-sharer="myspace" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://chang2000.github.io/karabiner/" data-title="WHY Karabiner? - from a programmer&#39;s perspective Mac改键神器"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/exploit/" class="next" rel="next" title="A Simple Exploit">A Simple Exploit<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2018 - 2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://chang2000.github.io" target="_blank">WANG Tianchang Alex</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript" src="/lib/cookieconsent/cookieconsent.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
