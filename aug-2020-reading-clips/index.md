@@ -1,4 +1,4 @@
-# Aug, 2020 Readling Clips
+# Aug, 2020 Reading Clips
 
 
 # Aug, 2020  Reading Clips
