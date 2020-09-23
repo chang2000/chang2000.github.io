@@ -4,9 +4,67 @@
         <link>https://chang2000.github.io/</link>
         <description>This is WANG Tianchang Alex</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>tianchang.wang.00@gmail.com (WANG Tianchang Alex)</managingEditor>
-            <webMaster>tianchang.wang.00@gmail.com (WANG Tianchang Alex)</webMaster><lastBuildDate>Mon, 31 Aug 2020 10:28:22 &#43;0800</lastBuildDate>
+            <webMaster>tianchang.wang.00@gmail.com (WANG Tianchang Alex)</webMaster><lastBuildDate>Wed, 23 Sep 2020 10:28:22 &#43;0800</lastBuildDate>
             <atom:link href="https://chang2000.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Sept, 2020 Reading Clips</title>
+    <link>https://chang2000.github.io/sept-2020-reading-clips/</link>
+    <pubDate>Wed, 23 Sep 2020 10:28:22 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://chang2000.github.io/sept-2020-reading-clips/</guid>
+    <description><![CDATA[<h1 id="sept-2020--reading-clips">Sept, 2020  Reading Clips</h1>
+<p>这是一个水到渠成的Side Project，基于自己需要大量阅读文章并记录的需求，以月为单位记录下觉得值得一读的资料文章，作为记录和分享。</p>
+<h2 id="highlighted">Highlighted</h2>
+<ul>
+<li>
+<p><a href="https://tecosaur.github.io/emacs-config/config.html" target="_blank" rel="noopener noreffer">A quite detailed Emacs Config</a></p>
+<p>This is a super-long and detailed Emacs config based on <strong>Doom Emacs</strong>, it worth to read if you get some free time.</p>
+</li>
+<li>
+<p><a href="https://blog.xuite.net/chuzu0/twblog/245567449" target="_blank" rel="noopener noreffer">林技師的各國好聽歌曲與橋梁設計心得及橋樑論文論壇司法評論語言</a></p>
+<p>从名字就能够看出来，是一個有趣的台灣老博客，至今仍然在更新，有時間可以讀一讀，見識一下。</p>
+</li>
+<li>
+<p><a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-macos" target="_blank" rel="noopener noreffer">Ruby On Rails for macOS</a></p>
+<p>Installing Ruby on macOS is quite troublesome and this post helps you to use virtual env tool <code>rbenv</code> to manage Ruby on Mac.</p>
+</li>
+<li>
+<p><a href="https://linghao.io/poss/five-year-summary-2013-2018" target="_blank" rel="noopener noreffer">过去这五年</a></p>
+<p>一个本科复旦postgraduate申到CMU的前辈回忆录</p>
+</li>
+<li>
+<p><a href="https://edwardtufte.github.io/et-book/" target="_blank" rel="noopener noreffer">Edward Tufte Book Font</a></p>
+</li>
+<li>
+<p><a href="https://www.tandfonline.com/doi/abs/10.1080/01449298608914504" target="_blank" rel="noopener noreffer">A paper on the <strong>visual design of Terminal Based Apps</strong></a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/user/Sepharoth64" target="_blank" rel="noopener noreffer">狂磕的YouTube Channel <em>Ali Abdaal</em></a></p>
+</li>
+<li>
+<p><a href="https://www.amazon.com/Steal-Like-Artist-Things-Creative/dp/0761169253" target="_blank" rel="noopener noreffer">Steal Like Artist, 使用已有成果是天经地义的事</a></p>
+</li>
+</ul>
+<h2 id="recommendation">Recommendation</h2>
+<ul>
+<li>
+<p><a href="https://www.ushistory.org/us/29a.asp" target="_blank" rel="noopener noreffer">The history of Lone Star Republic</a></p>
+<p>The official history of <strong>Lone Star Republic</strong>, a.k.a <strong>Texas Republic</strong>.</p>
+</li>
+<li>
+<p><a href="https://liqi.io/jailbreakhum/" target="_blank" rel="noopener noreffer">JailbreakHum｜少数派撰稿人：用更现代的方式做任务管理</a></p>
+</li>
+<li>
+<p><a href="https://jhuo.ca/" target="_blank" rel="noopener noreffer">HouJu&rsquo;s Blog 一个还蛮有态度的Blog</a></p>
+</li>
+<li>
+<p><a href="https://www.allacronyms.com/" target="_blank" rel="noopener noreffer">A website for abbreviation</a>
+I will write a single post on the usage of the website.</p>
+</li>
+</ul>
+<p>t</p>
+]]></description>
+</item><item>
     <title>Aug, 2020 Reading Clips</title>
     <link>https://chang2000.github.io/aug-2020-reading-clips/</link>
     <pubDate>Mon, 31 Aug 2020 10:28:22 &#43;0800</pubDate>
