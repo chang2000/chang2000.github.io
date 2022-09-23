@@ -1,0 +1,14 @@
+{
+  "name": "tianchang-wang-site",
+  "version": "1.0.0",
+  "description": "This is Tianchang Wang's personal site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Tianchang (Alex)",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
