@@ -4,7 +4,8 @@
   "description": "This is Tianchang Wang's personal site.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "sass": "sass --watch styles/style.scss styles/style.css"
   },
   "author": "Tianchang (Alex)",
   "license": "MIT",
@@ -15,6 +16,7 @@
     "boxicons": "^2.1.4",
     "glightbox": "^3.2.0",
     "isotope-layout": "^3.0.6",
+    "sass": "^1.55.0",
     "swiper": "^8.4.2",
     "waypoints": "^4.0.1"
   },
