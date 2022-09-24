@@ -1,11 +1,13 @@
+/* eslint-disable no-undef */
+// Required for this module
 /**
 * Template Name: Lonely - v4.9.0
 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
-  "use strict";
+(function () {
+  'use strict'
 
   /**
    * Easy selector helper function
@@ -117,7 +119,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function () {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -126,7 +128,7 @@
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '.navbar .dropdown > a', function (e) {
     if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
@@ -136,7 +138,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -160,42 +162,42 @@
         scrollto(window.location.hash)
       }
     }
-  });
+  })
 
   /**
    * Porfolio isotope and filter
    */
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('.portfolio-container')
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
-      });
+      })
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+      let portfolioFilters = select('#portfolio-flters li', true)
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+      on('click', '#portfolio-flters li', function (e) {
+        e.preventDefault()
+        portfolioFilters.forEach(function (el) {
+          el.classList.remove('filter-active')
+        })
+        this.classList.add('filter-active')
 
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
-        });
-      }, true);
+        })
+      }, true)
     }
 
-  });
+  })
 
   /**
    * Initiate portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
+  // const portfolioLightbox = GLightbox({
+  //   selector: '.portfolio-lightbox'
+  // })
 
   /**
    * Portfolio details slider
@@ -212,21 +214,21 @@
       type: 'bullets',
       clickable: true
     }
-  });
+  })
 
   /**
    * Skills animation
    */
-  let skilsContent = select('.skills-content');
+  let skilsContent = select('.skills-content')
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
+      handler: function () {
+        let progress = select('.progress .progress-bar', true)
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
+        })
       }
     })
   }
@@ -257,11 +259,15 @@
         slidesPerView: 3,
       }
     }
-  });
+  })
 
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
+  new PureCounter()
+
+  /**
+   * Following JS Code is written by Tianchang Wang, NOT included in the template
+   */
 
 })()

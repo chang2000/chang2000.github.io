@@ -8,18 +8,30 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/* CSS Custom Properties(Variables) by Tianchang Wang, NOT included in the template*/
+/* Preprocessor "NOT" required. */
+:root {
+  --theme-main: black;
+  --theme-hover: grey;
+  /*  */
+  /* color: var(--theme-hover); // main
+  color: #dd5a92;  // hover
+  */
+}
+
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'JetBrains Mono', "IBM Plex Mono", "Open Sans", sans-serif;
   color: #5a656e;
 }
 
 a {
-  color: #d43076;
+  color: var(--theme-main);
   text-decoration: none;
 }
 
 a:hover {
-  color: #dd5a92;
+  color: var(--theme-hover);
   text-decoration: none;
 }
 
@@ -29,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: 'JetBrains Mono', "IBM Plex Mono", "Playfair Display", serif;
 }
 
 /*--------------------------------------------------------------
@@ -42,7 +54,8 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 9999;
-  background: #d43076;
+  background: var(--theme-hover);
+  background: black;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,6 +70,7 @@ h6 {
 
 .back-to-top:hover {
   background: #db528c;
+  background: grey;
   color: #fff;
 }
 
@@ -148,7 +162,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #d43076;
+  color: var(--theme-hover);
+  color: cyan;
 }
 
 .navbar .dropdown ul {
@@ -183,7 +198,8 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #d43076;
+  color: var(--theme-hover);
+  color: cyan;
 }
 
 .navbar .dropdown:hover>ul {
@@ -282,7 +298,8 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #d43076;
+  color: var(--theme-hover);
+  color: cyan;
 }
 
 .navbar-mobile .getstarted,
@@ -317,7 +334,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #d43076;
+  color: var(--theme-hover);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -330,7 +347,7 @@ h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../images/hero-bg.jpg") top center;
+  background: url("../images/hero.jpg") top center;
   background-size: cover;
   padding: 0 15px;
 }
@@ -360,7 +377,7 @@ h6 {
 
 #hero .btn-get-started:hover {
   padding-top: 10px;
-  color: #d43076;
+  color: var(--theme-hover);
 }
 
 @media (min-width: 1024px) {
@@ -412,7 +429,8 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #d43076;
+  background: var(--theme-hover);
+  background: black;
   bottom: 0;
   left: 0;
 }
@@ -506,13 +524,13 @@ section {
   font-weight: 700;
   color: #2c4964;
   margin-left: 50px;
-  font-family: "Playfair Display", serif;
+  font-family: 'JetBrains Mono', "Playfair Display", serif;
 }
 
 .about .content .count-box p {
   padding: 15px 0 0 0;
   margin: 0 0 0 50px;
-  font-family: "Playfair Display", serif;
+  font-family: 'JetBrains Mono', "Playfair Display", serif;
   font-size: 14px;
   color: #437099;
 }
@@ -523,7 +541,7 @@ section {
   margin-top: 20px;
   color: #437099;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'JetBrains Mono', "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -568,7 +586,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'JetBrains Mono', "Poppins", sans-serif;
   color: #2c4964;
 }
 
@@ -585,7 +603,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #dd5a92;
+  background-color: grey;
 }
 
 /*--------------------------------------------------------------
@@ -597,13 +615,14 @@ section {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #4b7dab;
-  font-family: "Poppins", sans-serif;
+  font-family: 'JetBrains Mono', "Poppins", sans-serif;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #d43076;
+  border-left: 2px solid var(--theme-hover);
+  border-left: 2px solid green;
   position: relative;
 }
 
@@ -622,7 +641,7 @@ section {
   display: inline-block;
   font-weight: 400;
   margin-bottom: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'JetBrains Mono', "Poppins", sans-serif;
 }
 
 .resume .resume-item ul {
@@ -646,7 +665,8 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #d43076;
+  /* border: 2px solid var(--theme-hover); */
+  border: 2px solid green;
 }
 
 /*--------------------------------------------------------------
@@ -676,7 +696,8 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #d43076;
+  /* background: var(--theme-hover); */
+  background: grey;
   height: 100%;
   border-radius: 0px;
 }
@@ -689,7 +710,8 @@ section {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  background: #d43076;
+  background: var(--theme-hover);
+  background: black;
   transition: all 0.3s ease-in-out;
 }
 
@@ -725,7 +747,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #d43076;
+  color: var(--theme-hover);
 }
 
 @media (max-width: 768px) {
@@ -767,7 +789,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #d43076;
+  color: var(--theme-hover);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -879,11 +901,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d43076;
+  border: 1px solid var(--theme-hover);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d43076;
+  background-color: var(--theme-hover);
 }
 
 .portfolio-details .portfolio-info {
@@ -1000,11 +1022,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d43076;
+  border: 1px solid var(--theme-hover);
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d43076;
+  background-color: var(--theme-hover);
 }
 
 @media (max-width: 767px) {
@@ -1024,13 +1046,13 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #d43076;
+  color: var(--theme-hover);
 }
 
 .contact .contact-about p {
   font-size: 14px;
   line-height: 24px;
-  font-family: "Playfair Display", serif;
+  font-family: 'JetBrains Mono', "IBM Plex Mono", "Playfair Display", serif;
   color: #3c6387;
 }
 
@@ -1042,7 +1064,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #fff;
-  color: #d43076;
+  color: var(--theme-hover);
   line-height: 0;
   padding: 8px 0;
   margin-right: 4px;
@@ -1051,11 +1073,11 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #d43076;
+  border: 1px solid var(--theme-hover);
 }
 
 .contact .social-links a:hover {
-  background: #d43076;
+  background: var(--theme-hover);
   color: #fff;
 }
 
@@ -1065,7 +1087,7 @@ section {
 
 .contact .info i {
   font-size: 32px;
-  color: #d43076;
+  color: var(--theme-hover);
   line-height: 0;
   margin-right: 15px;
 }
@@ -1079,6 +1101,7 @@ section {
   display: none;
   color: #fff;
   background: #ed3c0d;
+  background: red;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1126,11 +1149,11 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #d43076;
+  border-color: var(--theme-hover);
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #d43076;
+  background: var(--theme-hover);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1180,4 +1203,28 @@ section {
   padding-top: 8px;
   text-align: center;
   font-size: 13px;
+}
+
+/* My Customized Style, NOT included in the template */
+/* Marker Pen effect for elements I'd like to emphsize */
+
+a.markerpen {
+  font-weight: bold;
+}
+
+a.markerpen:hover{
+  font-weight: bold;
+  color: #6b96be;
+}
+
+a:after {
+  content: '';
+  /* position: absolute;
+  z-index: -1;
+  top: 66%;
+  left: -0.1em;
+  right: -0.1em; */
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: rgba(79, 192, 141, 0.5);
 }
