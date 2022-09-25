@@ -29,6 +29,8 @@ This personal website is designed as a bridge between me and my potential client
 
 This Project is development under node version `18.9.0`. It's recommended to use a **nodejs version manager**.
 
+This project is requires a basic node envrionment. Bootstrap and all other related scripts are provided in the `vendor` folder. To develop with this project, you need install `eslint`,`prettier` and `sass` via `npm` accorading to the following instructions. 
+
 1. Clone the project to your local computer.
 2. Use `npm install` to install related development dependencies.
 3. Use `npm run sass` while developing to keep css file updated.
