@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test",
-    "sass": "sass --watch styles/style.scss styles/style.css"
+    "sass": "sass --watch styles/style.scss styles/style.css",
+    "build": "sass styles/style.scss styles/style.css"
   },
-  "author": "Tianchang (Alex)",
+  "author": "Tianchang (Alex) Wang",
   "license": "MIT",
   "dependencies": {
     "sass": "^1.55.0"
