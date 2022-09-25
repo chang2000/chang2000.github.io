@@ -2,13 +2,15 @@
 
 > Author: Tianchang Wang
 >
-> Course Link: https://johnguerra.co/classes/webDevelopment_fall_2022/ The **design document** is available [here](./docs/design.pdf).
+> Course Link: https://johnguerra.co/classes/webDevelopment_fall_2022/ 
+>
+> The **design document** is available [here](./docs/design.pdf).
 
 The page is hosted on [https://chang2000.github.io](https://chang2000.github.io) via Github Pages.
 
 Check out this video for a demo of the website: [](https://chang2000.github.io)
 
-Find the presentation slides here: 
+Find the presentation slides [here](https://docs.google.com/presentation/d/11oOmDFVqwDcXtJvD0wh2XzJlfMwOaHeyypQoMSOWABE/edit?usp=sharing)
 
 This website is based on this template https://bootstrapmade.com/free-html-bootstrap-template-lonely/.
 
