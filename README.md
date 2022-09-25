@@ -10,7 +10,7 @@ Check out this video for a demo of the website: [](https://chang2000.github.io)
 
 Find the presentation slides here: 
 
-
+This website is based on this template https://bootstrapmade.com/free-html-bootstrap-template-lonely/.
 
 ## Project Objective
 
@@ -18,7 +18,7 @@ This personal website is designed as a bridge between me and my potential client
 
 ## Thumbnails
 
-- Hero section ![hero-view](./docs/hero-view.png) Animation: ![hero-animation](./docs/hero-section.gif)
+- Hero section with animation: ![hero-animation](./docs/hero-section.gif)
 
 - About section ![about-section](./docs/about-view.png) Click the email icon to email me directly! Your email client will be raised automatically. ![mail-me](./docs/mail-to-me.gif) Important content are being marked with custom marker pen effect: ![marker-pen](./docs/markerpen-effect.gif)
 - Resume section ![resume-section](./docs/resume-view.png)
