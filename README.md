@@ -1,4 +1,5 @@
 # Tianchang Wang's Personal Website
+<a href="https://github.com/chang2000/chang2000.github.io/stargazers"><img src="https://img.shields.io/github/stars/chang2000/chang2000.github.io" alt="Stars Badge"/></a>
 
 > Author: Tianchang Wang
 >
