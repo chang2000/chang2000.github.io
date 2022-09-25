@@ -12,7 +12,7 @@ Check out this video for a demo of the website: [](https://chang2000.github.io)
 
 Find the presentation slides [here](https://docs.google.com/presentation/d/11oOmDFVqwDcXtJvD0wh2XzJlfMwOaHeyypQoMSOWABE/edit?usp=sharing)
 
-This website is based on this template https://bootstrapmade.com/free-html-bootstrap-template-lonely/.
+This website **PASSES** W3C validator without errors or warning.
 
 ## Project Objective
 
@@ -40,3 +40,7 @@ This project is requires a basic node envrionment. Bootstrap and all other relat
 4. To host this website, setup the root directory to `.` is alright, where the `index.html` resides.
 
 You may also download a release of this project here: [https://github.com/chang2000/chang2000.github.io/releases](https://github.com/chang2000/chang2000.github.io/releases)
+
+## MISC
+
+This website is based on this template https://bootstrapmade.com/free-html-bootstrap-template-lonely/.
