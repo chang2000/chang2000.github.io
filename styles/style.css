@@ -154,7 +154,7 @@ h6 {
 .navbar .active:focus,
 .navbar li:hover > a {
   color: var(--theme-hover);
-  color: cyan;
+  color: #9bb5ce;
 }
 
 .navbar .dropdown ul {
@@ -190,7 +190,7 @@ h6 {
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover > a {
   color: var(--theme-hover);
-  color: cyan;
+  color: #9bb5ce;
 }
 
 .navbar .dropdown:hover > ul {
@@ -286,7 +286,7 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: var(--theme-hover);
-  color: cyan;
+  color: #9bb5ce;
 }
 
 .navbar-mobile .getstarted,
@@ -459,7 +459,7 @@ section {
 
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
-    display: block !important;
+    display: block;
   }
   .breadcrumbs ol {
     display: block;
@@ -1073,74 +1073,6 @@ section {
   margin: 0;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  background: red;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--theme-hover);
-}
-
-.contact .php-email-form button[type=submit] {
-  background: var(--theme-hover);
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #dd5a92;
-}
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1222,6 +1154,31 @@ section {
   font-size: 40px;
   font-weight: bold;
   color: white;
+}
+
+.about-billboard {
+  color: black;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 5em;
+  border: #111;
+  background: lightgrey;
+  border-radius: 10px;
+  max-height: 60px;
+  box-shadow: -8px 8px #0f1035;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  transition: all 0.3s;
+}
+.about-billboard:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#billboard-toggle {
+  display: none;
+}
+#billboard-toggle:hover {
+  color: rgba(44, 73, 100, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
