@@ -1218,4 +1218,10 @@ section {
   background-image: linear-gradient(to right, --serria-blue 0, --serria-blue 100%);
 }
 
+.hero-hello {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
