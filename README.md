@@ -35,4 +35,4 @@ This Project is development under node version `18.9.0`. It's recommended to use
 4. Use `npm run build` to build the whole project.
 4. To host this website, setup the root directory to `.` is alright, where the `index.html` resides.
 
-You may also download a release of this project in the release section. 
+You may also download a release of this project here: [https://github.com/chang2000/chang2000.github.io/releases](https://github.com/chang2000/chang2000.github.io/releases)
