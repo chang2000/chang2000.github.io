@@ -9,7 +9,7 @@
 
 The page is hosted on [https://chang2000.github.io](https://chang2000.github.io) via Github Pages.
 
-Check out this video for a demo of the website: [](https://chang2000.github.io)
+Check out this [video demo of the website](https://www.youtube.com/watch?v=V7JF0t7yD_U)
 
 Find the presentation slides [here](https://docs.google.com/presentation/d/11oOmDFVqwDcXtJvD0wh2XzJlfMwOaHeyypQoMSOWABE/edit?usp=sharing)
 
