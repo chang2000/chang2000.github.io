@@ -21,6 +21,10 @@ This personal website is designed as a bridge between me and my potential client
 
 ## Thumbnails
 
+- The whole map
+
+  ![the-wholmap](./docs/thumbnail.png)
+
 - Hero section with animation: ![hero-animation](./docs/hero-section.gif)
 
 - About section ![about-section](./docs/about-view.png) Click the email icon to email me directly! Your email client will be raised automatically. ![mail-me](./docs/mail-to-me.gif) Important content are being marked with custom marker pen effect: ![marker-pen](./docs/markerpen-effect.gif)
